@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <link rel="stylesheet" href="../static/style.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="../static/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jessica Zheng">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Jessica Zheng's professional website">
+    <title>Jessica Zheng</title>
+</head>
+<body onload="addYear()">
+    <header>
+        <h1 id="webname"> Jessica Zheng</h1>
+        <nav id="myTopnav" class="topnav">
+            <a href="index.html">Home</a>
+            <a href="CV.html" >CV</a>
+            <a href="contact.html" class="active">Contact Me</a>
+            <a href="fun.html">For Fun</a>
+            <a href="javascript:void(0);" class="icon" >
+                <i class="fa fa-bars" onclick="activeNav()"></i></a>
+        </nav>
+    </header>
+    <div class="main">
+        <h2>Contact Me</h2>
+        <form action="">
+            <label for="UserName"> Your Name (required):</label>
+            <input type="text" name="UserName" id="UserName" required/>
+            <label for="UserEmail"> Your Email (required):</label>
+            <input type="email" name="UserEmail" id="UserEmail" required>
+            <label for="UserText"> Your Text (required)</label>
+            <textarea name="UserText" id="UserText" cols="30" rows="10" required></textarea>
+            <input type="submit" value="SEND" onclick="validate()">
+        </form>
+        <p id="ValidateMsg"></p>
+        <table>
+            <tr><th>Contact Method</th>
+<th>Description</th></tr>
+            <tr><td>Email</td><td>jzheng5@andrew.cmu.edu</td></tr>
+            <tr><td>Phone</td><td>(248)-856-5489</td></tr>
+            <tr><td>LinkedIn</td><td>
+                <a href="https://www.linkedin.com/in/jessica-zheng-016b65286/" target = "_blank">LinkedIn Link</a>
+            </td></tr>
+        </table>
+    </div>
+    <footer id="copyYear">
+        <p>Jessica Zheng &copy</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <link rel="stylesheet" href="../static/style.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="../static/script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jessica Zheng">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Jessica Zheng's professional website">
+    <title>Jessica Zheng</title>
+</head>
+<body onload="addYear()">
+    <header>
+        <h1 id="webname"> Jessica Zheng</h1>
+        <nav id="myTopnav" class="topnav">
+            <a href="index.html">Home</a>
+            <a href="CV.html" >CV</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="fun.html" class="active">For Fun</a>
+            <a href="javascript:void(0);" class="icon" >
+                <i class="fa fa-bars" onclick="activeNav()"></i></a>
+        </nav>
+    </header>
+    <div class="mainFun">
+        <div id="item">
+        <h2>Things I love to do for fun</h2>
+            <!--button id="SeeMoreBTN" onclick="showList()">Click to see...</button-->
+        <ul id="FavList">
+            <li>Swim</li>
+            <li>Calligraphy</li>
+            <li>Bake</li>
+            <li>Run</li>
+            <li>Play piano</li>
+        </ul>
+        </div>
+        <div id="item2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zdaQ0PmSmoU?si=WHfLD8fDzWqMqXS7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div id="item3"></div>
+        <h3>My favorite places</h3>
+           <!--The div element for the map -->
+           <div id="map"></div>
+           <!-- prettier-ignore -->
+           <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||
+           (b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");
+           for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));
+           a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+               ({key: "AIzaSyAt6rZQyjuwISBACOPnRQ95vL0mVF9tc68", v: "weekly"});</script>
+
+        <div id="item4"></div>
+        <img src="../static/cute dogs.jpeg" id=”funIMG”>
+    </div>
+    <footer id="copyYear">
+        <p>Jessica Zheng &copy</p>
+    </footer>
+</body>
+</html>
